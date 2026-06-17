@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>★ 역대급 레전드 모음 ★</title>
+  <style>
+    /* 배경을 움직이는 무지개 그라데이션으로 설정 */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(120deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+      background-size: 400% 400%;
+      animation: rainbowBackground 10s ease infinite;
+    }
+
+    /* 배경이 부드럽게 움직이도록 애니메이션 추가 */
+    @keyframes rainbowBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 링크들을 감싸는 박스 스타일 */
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.85); /* 글씨가 잘 보이도록 반투명한 흰색 배경 추가 */
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    /* 링크 버튼 스타일 */
+    .legend-link {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    /* 첫 번째 버튼: 빨간색 계열 */
+    .link-1 {
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    }
+
+    /* 두 번째 버튼: 보라색 계열 */
+    .link-2 {
+      background: linear-gradient(45deg, #8a23ab, #e94057);
+    }
+
+    /* 마우스를 올렸을 때 반응하는 효과 */
+    .legend-link:hover {
+      transform: scale(1.1); /* 크기가 살짝 커짐 */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p>
+      <a class="legend-link link-1" href="https://youtu.be/dQw4w9WgXcQ?si=3aKFXCrRfWTCtUBb" target="_blank">진짜 레전드링크!!!!</a>
+      <br>
+      <a class="legend-link link-2" href="https://youtu.be/fC7oUOUEEi4?si=lBwyV_-n25AWbavg" target="_blank">진짜 더 레전드링크!!!!</a>
+    </p>
+  </div>
+
+</body>
+</html>
